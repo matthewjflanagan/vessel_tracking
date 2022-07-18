@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Vessel Tracker</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="h2 w-100 text-center">Vessel Tracker</span>
+    </nav>
+    <div class="trackerContainer">
+        <div class="basicRow">
+            <div class="searchHistoryContainer">
+                <div class="searchBox">
+                    <p class="search-header my-2">Enter Vessel Name, IMO Number, or MMSI Number</p>
+                    <div class="input-group my-2">
+                        <input class="form-control city-input" type="text" placeholder="Enter vessel name, imo#, or mmsi#">
+                    <div class="input-group-append">
+                        <button class="btn search-button" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trackVesselBorder">
+            <div class="basicRow">
+                    <p id="name" class="trackVessel"></p>
+            </div>
+            <div class="basicRow">
+                    <p id="destination" class="trackVessel"></p>
+            </div>
+            <div class="basicRow">
+                    <p id="location" class="trackVessel"></p>
+            </div>
+            <div class="basicRow">
+                    <p id="status" class="trackVessel"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
